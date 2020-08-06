@@ -131,9 +131,9 @@ const extension = {
     bind() {
         chrome.extension.onMessage.addListener(this.eventSwitcher.bind(this));
         window.addEventListener("message", function (event) {
-            console.info('event',event);
+            // console.info('event',event);
             if (event.data && event.data.from === 'vue-rt-style-kit') {
-                console.info('___===+__+_+_+_+')
+                // console.info('___===+__+_+_+_+')
                 this.setUIKitContent(event.data)
             }
         }.bind(this))
