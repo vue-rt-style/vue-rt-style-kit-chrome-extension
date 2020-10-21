@@ -165,35 +165,36 @@
     margin-right: -10px;
     -ms-flex-wrap: wrap
 }
-
 .rt-extension-container {
     width: 100%;
-    max-width: 1480px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 70px;
     padding-right: 70px;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    -ms-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 3s;
-    -moz-transition-duration: 3s;
-    -o-transition-duration: 3s;
-    -ms-transition-duration: 3s;
     transition-duration: 3s;
-    -webkit-transition-property: opacity, visibility;
-    -moz-transition-property: opacity, visibility;
-    -o-transition-property: opacity, visibility;
-    -ms-transition-property: opacity, visibility;
     transition-property: opacity, visibility
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1459px) {
     .rt-extension-container {
         padding-left: 30px;
         padding-right: 30px
+    }
+}
+
+@media (max-width: 1024px) {
+    .rt-extension-container {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+}
+
+@media (max-width: 1280px) {
+    .rt-extension-container {
+        padding-left: 10px;
+        padding-right: 10px
     }
 }
 
