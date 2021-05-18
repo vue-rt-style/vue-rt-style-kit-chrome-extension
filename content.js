@@ -29,9 +29,9 @@ const extension = {
         Object.keys(this.version).map(function(key){
             if (this.version[key]) {
                 versions += '<p><span style="width:150px; display: inline-block"><span style="font-weight: bold">' + key + ': </span>' + this.version[key] + '</span>'
-                if (this.lastVersion[key]) {
-                    versions += " <span style='font-style: italic; color:#70f'>last: " + this.lastVersion[key] + '</span>';
-                }
+                // if (this.lastVersion[key]) {
+                //     versions += " <span style='font-style: italic; color:#70f'>last: " + this.lastVersion[key] + '</span>';
+                // }
                 versions += '</p>';
             }
         }.bind(this));
